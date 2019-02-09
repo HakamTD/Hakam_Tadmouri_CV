@@ -1,0 +1,282 @@
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Work Sans', sans-serif; }
+
+.navbar {
+  background-color: initial;
+  border: none; }
+  .navbar ul .start a {
+    color: #f06000 !important;
+    cursor: pointer; }
+  .navbar .navbar-nav {
+    margin-left: 20%; }
+  .navbar .navbar-nav > li {
+    margin-left: 51px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: initial; }
+    .navbar .navbar-nav > li > a {
+      padding-top: 25px;
+      color: #ccc;
+      cursor: pointer;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; }
+      .navbar .navbar-nav > li > a:hover {
+        color: #f06000; }
+  .navbar .navbar-brand {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    padding-top: 20px; }
+
+.my_name {
+  background: url("../photo/chare.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 760px;
+  color: #ccc;
+  margin-top: -80px; }
+  .my_name .overlight {
+    background-color: rgba(2, 2, 2, 0.7);
+    min-height: 760px; }
+    .my_name .overlight .name_details {
+      margin-top: 22%; }
+      .my_name .overlight .name_details h1 {
+        font-size: 75px;
+        font-weight: bold;
+        padding-bottom: 30px;
+        color: #FFF; }
+        .my_name .overlight .name_details h1 span {
+          color: #f06000; }
+      .my_name .overlight .name_details button {
+        padding: 12px;
+        width: 30%;
+        background-color: initial;
+        border: 1px solid #FFF;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 6%;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out; }
+        .my_name .overlight .name_details button:hover {
+          color: #333;
+          background-color: #f06000;
+          border: 1px solid #f06000; }
+        .my_name .overlight .name_details button i {
+          padding-left: 2%; }
+
+@media (max-width: 768px) {
+  .my_name .overlight .name_details {
+    margin-top: 40%; }
+
+  .navbar {
+    background-color: #111 !important; } }
+.about {
+  color: #FFF;
+  padding-top: 60px;
+  padding-bottom: 50px; }
+  .about .col-xs-1, .about .col-sm-1, .about .col-md-1, .about .col-lg-1,
+  .about .col-xs-2, .about .col-sm-2, .about .col-md-2, .about .col-lg-2,
+  .about .col-xs-3, .about .col-sm-3, .about .col-md-3, .about .col-lg-3,
+  .about .col-xs-4, .about .col-sm-4, .about .col-md-4, .about .col-lg-4,
+  .about .col-xs-5, .about .col-sm-5, .about .col-md-5, .about .col-lg-5,
+  .about .col-xs-6, .about .col-sm-6, .about .col-md-6, .about .col-lg-6,
+  .about .col-xs-7, .about .col-sm-7, .about .col-md-7, .about .col-lg-7,
+  .about .col-xs-8, .about .col-sm-8, .about .col-md-8, .about .col-lg-8,
+  .about .col-xs-9, .about .col-sm-9, .about .col-md-9, .about .col-lg-9,
+  .about .col-xs-10, .about .col-sm-10, .about .col-md-10, .about .col-lg-10,
+  .about .col-xs-11, .about .col-sm-11, .about .col-md-11, .about .col-lg-11,
+  .about .col-xs-12, .about .col-sm-12, .about .col-md-12, .about .col-lg-12 {
+    padding-right: 0px;
+    padding-left: 0px; }
+  .about h1 {
+    color: #333;
+    font-weight: bold; }
+  .about .underline_icon {
+    color: #333;
+    margin-top: -15px;
+    margin-bottom: 50px; }
+    .about .underline_icon i {
+      margin-left: -11px; }
+  .about .profile {
+    background-color: #333;
+    min-height: 1007px;
+    padding-top: 40px;
+    padding-left: 9%; }
+    .about .profile h2 {
+      padding-bottom: 50px; }
+    .about .profile .requerd_info {
+      margin-bottom: -1px;
+      font-weight: bold; }
+    .about .profile .info {
+      margin-bottom: 50px;
+      margin-top: 5px;
+      color: #f06000;
+      font-size: 16px; }
+  .about .skils {
+    padding-top: 20px;
+    background-color: #f06000;
+    min-height: 900px;
+    padding-left: 7%; }
+    .about .skils h3 {
+      padding-bottom: 15px; }
+    .about .skils .progress_skells {
+      padding-left: 2%; }
+      .about .skils .progress_skells .row {
+        width: 100%; }
+      .about .skils .progress_skells .progress-bar {
+        background-color: #333;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 20px; }
+
+.my_work {
+  background-color: #333;
+  color: #FFF;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .my_work h1 {
+    font-weight: bold; }
+    .my_work h1 span {
+      color: #f06000; }
+  .my_work .underline_icon {
+    margin-top: -15px;
+    margin-bottom: 70px; }
+    .my_work .underline_icon i {
+      margin-right: -11px;
+      color: #f06000; }
+  .my_work .work_info {
+    margin-bottom: 60px;
+    overflow: hidden; }
+    .my_work .work_info i {
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      border-radius: 50%;
+      border: 1px solid;
+      cursor: pointer;
+      z-index: 999999;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; }
+      .my_work .work_info i:hover {
+        background-color: #f06000;
+        border: 1px solid #f06000;
+        color: #FFF; }
+    .my_work .work_info h3 {
+      padding-bottom: 20px;
+      padding-top: 15px; }
+      .my_work .work_info h3 span {
+        color: #f06000; }
+    .my_work .work_info p {
+      line-height: 2em;
+      font-size: 16px; }
+    .my_work .work_info button {
+      background-color: initial;
+      color: #FFF;
+      border: 1px solid #FFF;
+      width: 30%;
+      margin-top: 30px;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; }
+      .my_work .work_info button:hover {
+        border: 1px solid #f06000;
+        color: #f06000; }
+      .my_work .work_info button:hover a {
+        color: #f06000; }
+      .my_work .work_info button a {
+        text-decoration: none;
+        color: #FFF;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out; }
+
+.certificat {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f06000;
+  color: #FFF;
+  min-height: 600px;
+  margin-top: 7%; }
+  .certificat:before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 125px;
+    top: -50px;
+    left: 0;
+    transform: skewY(10deg);
+    background-color: #f06000;
+    z-index: -1; }
+  .certificat:after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 125px;
+    top: -50px;
+    right: 0;
+    transform: skewY(-10deg);
+    background-color: #f06000;
+    z-index: -1; }
+  .certificat h1 {
+    font-weight: bold; }
+    .certificat h1 span {
+      color: #333; }
+  .certificat .underline_icon {
+    margin-bottom: 70px; }
+    .certificat .underline_icon i {
+      margin-right: -10px; }
+  .certificat h2 {
+    color: #333; }
+  .certificat .certifecate_info {
+    margin-top: 10%; }
+    .certificat .certifecate_info h3 {
+      margin: 0px;
+      padding: 0px;
+      font-weight: bold;
+      padding-bottom: 10px;
+      margin-bottom: 60px;
+      letter-spacing: 2px; }
+    .certificat .certifecate_info i {
+      margin: 0px;
+      padding: 0px;
+      color: #333; }
+
+.contact {
+  background-color: #333;
+  padding-top: 50px;
+  color: #FFF; }
+  .contact h1 {
+    font-weight: bold; }
+  .contact .underline_icon {
+    margin-bottom: 8%; }
+    .contact .underline_icon i {
+      margin-right: -10px; }
+  .contact .contact_info {
+    margin-bottom: 50px; }
+    .contact .contact_info h4 {
+      color: #f06000;
+      letter-spacing: 2px;
+      padding-top: 15px;
+      padding-bottom: 15px; }
+  .contact p {
+    letter-spacing: 1px; }
+  .contact .copyright {
+    margin-top: 70px;
+    background-color: #111;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px; }
+    .contact .copyright label span {
+      color: #f06000; }
+
+/*# sourceMappingURL=style.css.map */

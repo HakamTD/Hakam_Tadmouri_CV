@@ -1,0 +1,368 @@
+$mainColor:#f06000;
+$blackColor:#333;
+
+@mixin webkit ($i){
+  -webkit-transition:all $i ease-in-out;
+  -moz-transition:all $i ease-in-out;
+  -o-transition:all $i ease-in-out;
+  transition:all $i ease-in-out;
+}
+h1,h2,h3,h4,h5,h6,p{
+  font-family: 'Work Sans', sans-serif;
+}
+// start navbar style
+
+.navbar{
+  background-color:initial;
+  border: none;
+  ul{
+    .start{
+      a{
+        color:$mainColor !important;
+        cursor:pointer;
+      }
+    }
+  }
+  .navbar-nav{
+    margin-left: 20%;
+  }
+  .navbar-nav > li{
+    margin-left: 51px;
+    font-size: 17px;
+    font-weight:bold;
+    background-color:initial;
+    >a{
+      padding-top: 25px;
+      color:#ccc;
+      cursor:pointer;
+      @include webkit(0.4s);
+      &:hover{
+        color:$mainColor;
+      }
+    }
+  }
+  .navbar-brand{
+    @include webkit(0.4s);
+    padding-top:20px;
+  }
+}
+// end navbar style
+
+// start my name div
+.my_name{
+  background: url('../photo/chare.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 760px;
+  color: #ccc;
+  margin-top: -80px;
+  .overlight{
+    background-color: rgba(2,2,2,0.7);
+    min-height:760px;
+    .name_details{
+      margin-top:22%;
+      h1{
+        font-size:75px;
+        font-weight: bold;
+        padding-bottom: 30px;
+        color:#FFF;
+        span{
+          color:$mainColor;
+        }
+      }
+      button{
+        padding: 12px;
+        width: 30%;
+        background-color:initial;
+        border:1px solid #FFF;
+        font-size:15px;
+        font-weight:bold;
+        margin-top:6%;
+        @include webkit(0.4s);
+        &:hover{
+          color:$blackColor;
+          background-color:$mainColor;
+          border:1px solid $mainColor;
+        }
+        i{
+          padding-left:2%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  .my_name .overlight .name_details{
+    margin-top:40%;
+  }
+  .navbar{
+    background-color:#111 !important;
+  }
+}
+
+// end my name div
+
+// start about me
+
+.about{
+  color:#FFF;
+  padding-top:60px;
+  padding-bottom:50px;
+  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, 
+  .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, 
+  .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, 
+  .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, 
+  .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, 
+  .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, 
+  .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, 
+  .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, 
+  .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, 
+  .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, 
+  .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, 
+  .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  h1{
+    color:$blackColor;
+    font-weight:bold;
+  }
+  .underline_icon{
+    color:$blackColor;
+    margin-top:-15px;
+    margin-bottom:50px;
+    i{
+      margin-left:-11px;
+    }
+  }
+  // start my profile info
+  .profile{
+    background-color:$blackColor;
+    min-height:1007px;
+    padding-top:40px;
+    padding-left:9%;
+    h2{
+      padding-bottom:50px;
+    }
+    // requerd thing like(my name ,my address,...)
+    .requerd_info{
+      margin-bottom: -1px;
+      font-weight: bold;
+    }
+    // my data
+    .info{
+      margin-bottom:50px;
+      margin-top:5px;
+      color:$mainColor;
+      font-size:16px;
+    }
+  }
+  // end my profile info
+
+  // start skils div
+  .skils{
+    padding-top:20px;
+    background-color:$mainColor;
+    min-height: 900px;
+    padding-left:7%;
+    h3{
+      padding-bottom:15px;
+    }
+    // start progress-par
+    .progress_skells{
+      padding-left:2%;
+      .row{
+        width:100%;
+      }
+      .progress-bar{
+        background-color:$blackColor;
+        padding-top:5px;
+        padding-bottom:5px;
+        margin-bottom:20px;
+      }
+    }
+    // end progress-par
+    }
+  }
+  // end skils div
+// end about me
+
+// start my work
+.my_work{
+  background-color:$blackColor;
+  color:#FFF;
+  padding-top:50px;
+  padding-bottom:50px;
+  h1{
+    font-weight:bold;
+      span{
+        color:$mainColor;
+      }
+    }
+  .underline_icon{
+    margin-top:-15px;
+    margin-bottom:70px;
+    i{
+      margin-right:-11px;
+      color:$mainColor;
+    }
+  }
+  .work_info{
+    margin-bottom:60px;
+    overflow: hidden;
+    i{
+      width:100px;
+      height:100px;
+      line-height: 100px;
+      border-radius: 50%;
+      border:1px solid;
+      cursor: pointer;
+      z-index:999999;
+      @include webkit(0.4s);
+      &:hover{
+        background-color:$mainColor;
+        border:1px solid $mainColor;
+        color:#FFF;
+      }
+    }
+    h3{
+      padding-bottom:20px;
+      padding-top:15px;
+      span{
+        color:$mainColor;
+      }
+    }
+    p{
+      line-height:2em;
+      font-size:16px;
+    }
+    button{
+      background-color:initial;
+      color:#FFF;
+      border:1px solid #FFF;
+      width:30%;
+      margin-top:30px;
+      @include webkit(0.4s);
+      &:hover{
+        border:1px solid $mainColor;
+        color: $mainColor;
+      }
+      &:hover a{
+        color:$mainColor;
+      }
+      a{
+        text-decoration: none;
+        color:#FFF;
+        @include webkit(0.4s);
+      }
+    }
+  }
+}
+// end my work
+
+// start cirteficate
+.certificat{
+  position: relative;
+  padding-top:50px;
+  padding-bottom:50px;
+  background-color:$mainColor;
+  color:#FFF;
+  min-height:600px;
+  margin-top:7%;
+  &:before{
+    content:'';
+    position:absolute;
+    width:60%;
+    height:125px;
+    top: -50px;
+    left:0;
+    transform: skewY(10deg);
+    background-color:$mainColor;
+    z-index: -1;
+  }
+  &:after{
+    content:'';
+    position:absolute;
+    width:60%;
+    height:125px;
+    top: -50px;
+    right:0;
+    transform: skewY(-10deg);
+    background-color:$mainColor;
+    z-index: -1;
+  }
+  h1{
+    font-weight:bold;
+    span{
+      color:$blackColor;
+    }
+  }
+  .underline_icon{
+    margin-bottom: 70px;
+    i{
+      margin-right:-10px;
+    }
+  }
+  h2{
+    color:$blackColor;
+  }
+  .certifecate_info{
+    margin-top:10%;
+    h3{
+      margin: 0px;
+      padding:0px;
+      font-weight:bold;
+      padding-bottom:10px;
+      margin-bottom:60px;
+      letter-spacing: 2px;
+    }
+    i{
+      margin: 0px;
+      padding:0px;
+      color:$blackColor;
+    }
+  }
+}
+// end cirteficate
+
+// start contact
+.contact{
+  background-color:$blackColor;
+  padding-top:50px;
+  color:#FFF;
+  h1{
+    font-weight:bold;
+  }
+  .underline_icon{
+    margin-bottom: 8%;
+    i{
+      margin-right:-10px;
+    }
+  }
+  .contact_info{
+    margin-bottom:50px;
+    h4{
+      color:$mainColor;
+      letter-spacing:2px;
+      padding-top:15px;
+      padding-bottom:15px;
+    }
+  }
+  p{
+    letter-spacing:1px;
+  }
+  .copyright{
+    margin-top:70px;
+    background-color:#111;
+    font-size:18px;
+    padding-top:15px;
+    padding-bottom:15px;
+    letter-spacing:2px;
+    label{
+      span{
+        color:$mainColor;
+      }
+    }
+  }
+}
+
+// end contact

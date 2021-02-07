@@ -153,6 +153,7 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #191919;
     padding: 2em;
     border-radius: 26px;
+    min-height: 560px;
     overflow: hidden; }
     .my_work .work_info i {
       width: 100px;
@@ -201,7 +202,7 @@ h1, h2, h3, h4, h5, h6, p {
         -o-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out; }
 
-.certificat {
+/* .certificat {
   position: relative;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -252,7 +253,7 @@ h1, h2, h3, h4, h5, h6, p {
       margin: 0px;
       padding: 0px;
       color: #333; }
-
+ */
 .contact {
   background-color: #333;
   padding-top: 50px;

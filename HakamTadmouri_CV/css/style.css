@@ -150,6 +150,9 @@ h1, h2, h3, h4, h5, h6, p {
       color: #f06000; }
   .my_work .work_info {
     margin-bottom: 60px;
+    background-color: #191919;
+    padding: 2em;
+    border-radius: 26px;
     overflow: hidden; }
     .my_work .work_info i {
       width: 100px;
